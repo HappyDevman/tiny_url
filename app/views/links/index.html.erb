@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Links</h1>
+
+<table>
+  <thead>
+  <tr>
+    <th>original url</th>
+    <th>short url</th>
+    <th>visitors count</th>
+    <th></th>
+  </tr>
+  </thead>
+  <tbody>
+   <%= render partial: 'link', collection: links, as: :link %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Link', new_link_path %>

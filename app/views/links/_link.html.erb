@@ -1,0 +1,6 @@
+<tr>
+  <td><%= link.original_url %></td>
+  <td><%= link_to link.short_url, link_redirect_path(path: link.short_url) %></td>
+  <td><%= link.ip_addresses.count %></td>
+  <td><%= link_to 'info', link_path(path: link.short_url) %></td>
+</tr>
